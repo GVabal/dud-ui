@@ -7,7 +7,7 @@ COPY . /app
 RUN npm ci
 RUN npm run build
 
-FROM nginx:latest
+FROM nginx:alpine
 
 COPY --from=build /app/dist/dud-ui /usr/share/nginx/html
 
