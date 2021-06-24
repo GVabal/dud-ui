@@ -1,19 +1,19 @@
-name: Angular CI with Karma
-
-on:
-  pull_request:
-    branches: [ main, development ]
-
-jobs:
-  build:
-    name: Run Angular tests with Karma
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.3.0
-      - run: npm ci
-      - run: npm run test
+#name: Angular CI with Karma
+#
+#on:
+#  pull_request:
+#    branches: [ main, development ]
+#
+#jobs:
+#  build:
+#    name: Run Angular tests with Karma
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v2
+#      - name: Use Node.js
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: 16.3.0
+#      - run: npm ci
+#      - run: npm run test
