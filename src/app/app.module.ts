@@ -1,32 +1,32 @@
 import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
-
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {HttpClientModule} from "@angular/common/http";
-import {HeaderComponent} from './components/header/header.component';
-import {CategoriesStripComponent} from './components/categories-strip/categories-strip.component';
-import {DudPageComponent} from './dud-page/dud-page.component';
-import {MediaItemComponent} from './components/media-item/media-item.component';
-import {MediaListComponent} from './components/media-list/media-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BrowserModule} from '@angular/platform-browser';
+import {HttpClientModule} from "@angular/common/http";
+import {AppRoutingModule} from './app-routing.module';
 import {MaterialModule} from "./material.module";
+
+import {AppComponent} from './app.component';
+import {CategoryListComponent} from './dud-page/categories-list/category-list.component';
+import {DudPageComponent} from './dud-page/dud-page.component';
+import {HeaderComponent} from './shared-components/header/header.component';
+import {MediaItemComponent} from './dud-page/media-item/media-item.component';
+import {MediaItemListComponent} from './dud-page/media-list/media-item-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CategoriesStripComponent,
+    CategoryListComponent,
     DudPageComponent,
     MediaItemComponent,
-    MediaListComponent
+    MediaItemListComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
