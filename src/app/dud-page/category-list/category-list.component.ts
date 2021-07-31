@@ -7,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CategoryListComponent implements OnInit {
 
+  categories: string[] = ['Sample1', 'Sample2', 'Sample3'];
+
   constructor() {
   }
 

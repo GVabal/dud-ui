@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Observable} from "rxjs";
+import {MediaItem} from "../../models/MediaItem";
 
 @Component({
   selector: 'app-media-list',
@@ -6,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./media-item-list.component.scss']
 })
 export class MediaItemListComponent implements OnInit {
+
+  mediaItems$!: Observable<MediaItem[]>;
 
   constructor() {
   }

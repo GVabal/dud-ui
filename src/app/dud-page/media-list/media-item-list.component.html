@@ -1,6 +1,4 @@
-<p>media-list works!</p>
-<app-media-item></app-media-item>
-<app-media-item></app-media-item>
-<app-media-item></app-media-item>
-<app-media-item></app-media-item>
-<app-media-item></app-media-item>
+<app-media-item *ngFor="let mediaItem of mediaItems$ | async"
+                [author]="mediaItem.createdBy"
+                [item]="mediaItem">
+</app-media-item>

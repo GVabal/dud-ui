@@ -6,7 +6,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {MaterialModule} from "./material.module";
 
 import {AppComponent} from './app.component';
-import {CategoryListComponent} from './dud-page/categories-list/category-list.component';
+import {CategoryListComponent} from './dud-page/category-list/category-list.component';
 import {DudPageComponent} from './dud-page/dud-page.component';
 import {HeaderComponent} from './shared-components/header/header.component';
 import {MediaItemComponent} from './dud-page/media-item/media-item.component';
